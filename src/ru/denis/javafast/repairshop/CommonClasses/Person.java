@@ -1,8 +1,8 @@
 package ru.denis.javafast.repairshop.CommonClasses;
 
 public class Person {
-    private String name;
-    private int salary;
+    protected String name;
+    protected int salary;
 
     public Person(String name){
         this.name = name;

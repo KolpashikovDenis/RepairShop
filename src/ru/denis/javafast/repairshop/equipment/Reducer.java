@@ -11,24 +11,24 @@ public class Reducer {
         return isShaftBroken;
     }
 
-    public void setShaftBroken(boolean shaftBroken) {
-        isShaftBroken = shaftBroken;
+    public void setShaftRepair(boolean shaftRepair) {
+        isShaftBroken = !shaftRepair;
     }
 
     public boolean isBearingBroken() {
         return isBearingBroken;
     }
 
-    public void setBearingBroken(boolean bearingBroken) {
-        isBearingBroken = bearingBroken;
+    public void setBearingRepair(boolean bearingRepair) {
+        isBearingBroken = !bearingRepair;
     }
 
     public boolean isImpellerBroken() {
         return isImpellerBroken;
     }
 
-    public void setImpellerBroken(boolean impellerBroken) {
-        isImpellerBroken = impellerBroken;
+    public void setImpellerRepair(boolean impellerRepair) {
+        isImpellerBroken = !impellerRepair;
     }
 
     public Reducer(boolean isShaftBroken, boolean isBearingBroken, boolean isImpellerBroken) {
