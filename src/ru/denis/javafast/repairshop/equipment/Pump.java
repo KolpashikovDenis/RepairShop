@@ -1,13 +1,14 @@
 package ru.denis.javafast.repairshop.equipment;
 
-public class Pump {
-    private boolean isShaftBroken;
-    private boolean isBearingBroken;
-    private boolean isImpellerBroken;
+import ru.denis.javafast.repairshop.CommonClasses.Equipment;
 
+public class Pump extends Equipment{
+    private boolean isImpellerBroken;
     private int nRepairLabor;
 
-    public Pump(boolean isShaftBroken, boolean isBearingBroken, boolean isImpellerBroken) {
+    public Pump(String name, boolean isShaftBroken, boolean isBearingBroken, boolean isImpellerBroken) {
+        super(name);
+
         this.isShaftBroken = isShaftBroken;
         this.isBearingBroken = isBearingBroken;
         this.isImpellerBroken = isImpellerBroken;
